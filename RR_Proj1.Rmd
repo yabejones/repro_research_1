@@ -1,0 +1,31 @@
+---
+title: "Project 1, Coursera Reproducible Research"
+author: "Abe-Jones, Yumiko"
+date: "4/12/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r libraries}
+library(tidyverse)
+library(lubridate)
+library(data.table)
+```
+
+
+```{r import_data echo = FALSE}
+df <- read.csv('activity.csv',na.strings = c('','NA','NULL'))
+df$date <- as.Date(df$date)## format as date
+```
+
+
+
+```{r hist, echo=FALSE}
+
+
+```
+
